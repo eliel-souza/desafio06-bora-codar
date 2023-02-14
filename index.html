@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cartão de Embarque</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Cartão de embarque</h1>
+      </header>
+
+      <main class="main">
+        <div class="ticket">
+          <!-- Container Flight -->
+          <div class="flight">
+            <div class="priceDate">
+              <div class="price">
+                <p class="price__title text-title">Voo</p>
+                <p class="price__info">RS995</p>
+              </div>
+              <div class="date">
+                <p class="date__title text-title">Data</p>
+                <p class="date__info">23/05/2023</p>
+              </div>
+            </div>
+
+            <div class="originDestiny">
+              <div class="origin">
+                <p class="text-title">São Paulo, Brasil</p>
+                <p class="origin__airport">GRU</p>
+                <p class="origin__time">17:00</p>
+              </div>
+              <div class="plane">
+                <img src="./images/plane.svg" alt="" />
+              </div>
+              <div class="destiny">
+                <p class="text-title">São Francisco, EUA</p>
+                <p class="destiny__airport">SFO</p>
+                <p class="destiny__time">04:48<sup>+1</sup></p>
+              </div>
+            </div>
+          </div>
+          <!-- Container Divider -->
+          <div class="divider">
+            <img src="./images/divider.svg" alt="" />
+            <span class="divider__left"></span>
+            <span class="divider__right"></span>
+          </div>
+          <!-- Container Passenger -->
+          <div class="passenger">
+            <div class="name-passenger">
+              <p class="name-passenger__title text-title">Passageiro</p>
+              <p class="name-passenger__info">Rodrigo Terron</p>
+            </div>
+            <div class="seat-passenger">
+              <p class="seat-passenger__title text-title">Assento</p>
+              <p class="seat-passenger__info">28A</p>
+            </div>
+          </div>
+          <!-- Container Divider -->
+          <div class="divider">
+            <img src="./images/divider.svg" alt="" />
+            <span class="divider__left"></span>
+            <span class="divider__right"></span>
+          </div>
+          <!-- Container Boarding -->
+          <div class="boarding">
+            <div class="boarding-group">
+              <div class="detail-boarding">
+                <div class="detail-boarding1">
+                  <p class="text-title">Embarque</p>
+                  <p class="detail-boarding__time">16:15</p>
+                </div>
+                <div class="detail-boarding2">
+                  <p class="text-title">Terminal</p>
+                  <p class="info">2</p>
+                </div>
+                <div class="detail-boarding3">
+                  <p class="text-title">Portão</p>
+                  <p class="info">15</p>
+                </div>
+              </div>
+              <div class="code-boarding">
+                <img class="code-boarding__image" src="./images/qrcode.svg" alt="" />
+                <p class="code-boarding__text text-title">Grupo de embarque: 3</p>
+              </div>
+            </div>
+            <!-- Container Notice -->
+            <div class="notice">
+              <p class="notice__text"><span class="notice__text--bold">Atenção:</span> o portão fecha 16:45</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__text">Qualquer problema procure o balcão de atendimento da sua companhia aérea</p>
+      </footer>
+    </div>
+  </body>
+</html>
