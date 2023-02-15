@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
 :root {
-  --bg-color: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
-  --white: #FFFFFF;
-  --text-gray: rgba(0, 0, 0, 0.70);
+  --bg-color: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  --white: #ffffff;
+  --text-gray: rgba(0, 0, 0, 0.7);
   --text-black: rgba(0, 0, 0, 0.88);
   --divider-color: #4f358b;
+  --button-color: #633bbc;
 }
 
 * {
@@ -25,8 +26,6 @@ h1 {
 }
 
 .text-title {
-  font-family: 'Rubik';
-  font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.063rem;
@@ -39,13 +38,16 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.container {
+.app {
+  min-height: 100vh;
   display: grid;
   place-content: center;
-  min-height: 100vh;
+}
+
+.container {
+  display: grid;
   gap: 1.25rem;
   max-width: 20.438rem;
-  margin: 0 auto;
 }
 
 .header__title {
@@ -57,25 +59,24 @@ body {
   text-align: center;
 }
 
-.main {
+.ticket {
   background-color: var(--white);
   border-radius: 1.5rem;
   filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
-}
-
-.ticket {
   display: grid;
 }
 
 .flight {
   padding: 1.5rem 2rem 1.275rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.priceDate {
+.price-date {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 7.438rem;
 }
 
 .price__info,
@@ -90,8 +91,7 @@ body {
   text-align: right;
 }
 
-.originDestiny {
-  margin-top: 1.5rem;
+.origin-destiny {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +103,7 @@ body {
   font-size: 2.5rem;
   line-height: 2.938rem;
   letter-spacing: -0.02em;
-  color: var(--text-black)
+  color: var(--text-black);
 }
 
 .destiny {
@@ -128,7 +128,7 @@ body {
 .divider__left,
 .divider__right {
   background-color: var(--divider-color);
-  padding: 12px 12px;
+  padding: 0.75rem 0.75rem;
   border-radius: 50%;
   position: absolute;
 }
@@ -140,54 +140,55 @@ body {
   padding: 1.5rem 2rem;
 }
 
-.seat-passenger {
+.passenger-seat {
   text-align: right;
 }
 
-.boarding {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem 2rem;
-  gap: 1.5rem;
-}
-
-.boarding-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.code-boarding {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.detail-boarding__time {
-  padding: 4px;
-  text-align: center;
-  width: 54px;
-  background: #633BBC;
-  border-radius: 8px;
-  color: var(--white);
-  margin-top: 0.125rem;
-}
-
-.detail-boarding2,
-.detail-boarding3 {
-  margin-top: 1rem;
-}
-
-.info,
-.name-passenger__info,
-.seat-passenger__info {
+.passenger-name__info,
+.passenger-seat__info,
+.boarding-detail__info {
   font-weight: 500;
   line-height: 1.188rem;
   letter-spacing: -0.02em;
   color: var(--text-black);
 }
 
-.notice__text { 
+.information {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  gap: 1.5rem;
+}
+
+.boarding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boarding-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.boarding-detail__time {
+  padding: 0.25rem;
+  text-align: center;
+  width: 3.375rem;
+  background: var(--button-color);
+  border-radius: 0.5rem;
+  color: var(--white);
+  margin-top: 0.125rem;
+}
+
+.boarding-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notice__text {
   font-weight: 400;
   line-height: 1.25rem;
   text-align: center;
@@ -203,7 +204,7 @@ body {
   padding: 0 2rem;
 }
 
-.footer__text { 
+.footer__text {
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.5rem;
