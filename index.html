@@ -8,16 +8,16 @@
     <title>Cartão de Embarque</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1 class="header__title">Cartão de embarque</h1>
-      </header>
+    <div class="app">
+      <div class="container">
+        <header class="header">
+          <h1 class="header__title">Cartão de embarque</h1>
+        </header>
 
-      <main class="main">
-        <div class="ticket">
+        <main class="ticket">
           <!-- Container Flight -->
           <div class="flight">
-            <div class="priceDate">
+            <div class="price-date">
               <div class="price">
                 <p class="price__title text-title">Voo</p>
                 <p class="price__info">RS995</p>
@@ -28,7 +28,7 @@
               </div>
             </div>
 
-            <div class="originDestiny">
+            <div class="origin-destiny">
               <div class="origin">
                 <p class="text-title">São Paulo, Brasil</p>
                 <p class="origin__airport">GRU</p>
@@ -52,13 +52,13 @@
           </div>
           <!-- Container Passenger -->
           <div class="passenger">
-            <div class="name-passenger">
-              <p class="name-passenger__title text-title">Passageiro</p>
-              <p class="name-passenger__info">Rodrigo Terron</p>
+            <div class="passenger-name">
+              <p class="passenger-name__title text-title">Passageiro</p>
+              <p class="passenger-name__info">Rodrigo Terron</p>
             </div>
-            <div class="seat-passenger">
-              <p class="seat-passenger__title text-title">Assento</p>
-              <p class="seat-passenger__info">28A</p>
+            <div class="passenger-seat">
+              <p class="passenger-seat__title text-title">Assento</p>
+              <p class="passenger-seat__info">28A</p>
             </div>
           </div>
           <!-- Container Divider -->
@@ -67,26 +67,28 @@
             <span class="divider__left"></span>
             <span class="divider__right"></span>
           </div>
-          <!-- Container Boarding -->
-          <div class="boarding">
-            <div class="boarding-group">
-              <div class="detail-boarding">
-                <div class="detail-boarding1">
+          <!-- Container Information -->
+          <div class="information">
+            <!-- Container Boarding -->
+            <div class="boarding">
+              <div class="boarding-detail">
+                <div class="boarding-detail__item1">
                   <p class="text-title">Embarque</p>
-                  <p class="detail-boarding__time">16:15</p>
+                  <p class="boarding-detail__time">16:15</p>
                 </div>
-                <div class="detail-boarding2">
+                <div class="boarding-detail__item2">
                   <p class="text-title">Terminal</p>
-                  <p class="info">2</p>
+                  <p class="boarding-detail__info">2</p>
                 </div>
-                <div class="detail-boarding3">
+                <div class="boarding-detail__item3">
                   <p class="text-title">Portão</p>
-                  <p class="info">15</p>
+                  <p class="boarding-detail__info">15</p>
                 </div>
               </div>
-              <div class="code-boarding">
-                <img class="code-boarding__image" src="./images/qrcode.svg" alt="" />
-                <p class="code-boarding__text text-title">Grupo de embarque: 3</p>
+
+              <div class="boarding-image">
+                <img class="boarding-image__code" src="./images/qrcode.svg" alt="" />
+                <p class="boarding-image__text text-title">Grupo de embarque: 3</p>
               </div>
             </div>
             <!-- Container Notice -->
@@ -94,12 +96,12 @@
               <p class="notice__text"><span class="notice__text--bold">Atenção:</span> o portão fecha 16:45</p>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
-      <footer class="footer">
-        <p class="footer__text">Qualquer problema procure o balcão de atendimento da sua companhia aérea</p>
-      </footer>
+        <footer class="footer">
+          <p class="footer__text">Qualquer problema procure o balcão de atendimento da sua companhia aérea</p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
